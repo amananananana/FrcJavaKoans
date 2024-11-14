@@ -66,6 +66,18 @@ public class AboutConditions {
      * sign(2) should return "positive"
      * 
      */
+    public static void main(String[] args) {
+        
+    }
+    int num1 = 2; {
+if (num1 >=0 ) {
+    System.out.print(num1 + " is positive");
+}
+else 
+{
+    System.out.print(num1 + "is negative");
+}
+
 
 
     /**
@@ -97,6 +109,17 @@ public class AboutConditions {
      * signOrZero(0) should return "zero"
      * 
      */
+    int number = 2;
+    if (number > 10) { 
+        System.out.print("Your number is greater than 10!");
+    }
+    else if (number > 0 && number < 10)   {
+        System.out.print("Your number is greater than 0 but less than 10");
+    }
+    else {
+        System.out.print("your number is negative");
+    }
+
 
 
     /**
@@ -129,4 +152,21 @@ public class AboutConditions {
      * gradeComment(0) should return "Oops!"
      * 
      */    
+    {
+int number1 = 6;
+if (number1 > 100 && number1 <0) {
+    System.out.print("You cheat!");
+}
+else if (number1 == 100) {
+    System.out.print("You got a perfect score!");
+}
+else if (number1 > 60) {
+    System.out.print("You failed");
+}
+else {
+    System.out.print("You passed");
+}
+
+    }
+}
 }

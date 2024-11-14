@@ -25,9 +25,28 @@ public class AboutMethods {
      * In 20 years from now, you will be [The new age entered above + 20 years].
      * 
      */
-    public static void computeAgeIn5And10And20YearsConsole() {
-
-    }
+    
+      
+    public static void computeAgeIn5And10And20YearsConsole() { 
+              String age1;
+              int age;
+              System.out.println("What is your age?");
+              age1 = readLine();
+              age = Integer.parseInt(age1);
+              age = age+5;
+              System.out.println("In 5 years from now, you will be " + age + ".");
+              System.out.println("What is your age?");
+              age1 = readLine();
+              age = Integer.parseInt(age1);
+              age=age+10;
+              System.out.println("In 10 years from now, you will be " + age + ".");
+              System.out.println("What is your age?");
+              age1 = readLine();
+              age = Integer.parseInt(age1);
+              age=age+20;
+              System.out.println("In 20 years from now, you will be " + age + ".");
+            
+          }
 
     /**
      * # Repetitive tasks: methods to the rescue
@@ -115,8 +134,27 @@ public class AboutMethods {
      * In 20 years from now, you will be [The new age entered above + 20 years].
      * 
      */
+    static void myMethod() {
+      int X;
+      String y;
+      System.out.println("What is your age?");
+      y = readLine();
+      X = Integer.parseInt(y);
+      X=X+5;
+      System.out.println("In 5 years from now, you will be " + X+".");
+      System.out.println("What is your age?");
+      y = readLine();
+      X = Integer.parseInt(y);
+      X=X+10;
+      System.out.println("In 10 years from now, you will be " + X+".");
+      System.out.println("What is your age?");
+      y = readLine();
+      X = Integer.parseInt(y);
+      X=X+20;
+      System.out.println("In 20 years from now, you will be " + X+".");
+    } 
     public static void computeAgeIn5And10And20YearsConsoleWithMethod() {
-
+myMethod();
     }
 
     /**
@@ -176,8 +214,17 @@ public class AboutMethods {
      * 
      */
     public static int square(int number) {
-        return 0;
-    }    
+        return number * number;
+    }   
+    public static void main(String[] args) {
+      int number = 3;
+      int result = square(number);
+      int number1 = 4;
+      int result2 = square(number1);
+      int number2 = 0;
+      int result3 = square(number2);
+  }
+}
 
     
     /**
@@ -212,4 +259,4 @@ public class AboutMethods {
      * legs(2, 3, 4) should return 32
      * 
      */
-}
+

@@ -28,7 +28,7 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void sayHelloInConsole() {
-
+System.out.println("Hello!");
     }
 
     /**
@@ -55,6 +55,7 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void computeTwoAndTwo() {
+        System.out.println(2+2);
 
     }
 
@@ -97,7 +98,9 @@ public class AboutConsoleAndVariables {
      * 4
      */
     public static void createAndDisplayAVariable() {
-
+int num1;
+num1 = 2+2;
+System.out.println(num1);
     }
 
     /**
@@ -117,7 +120,8 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void createAndDisplayAStringVariable() {
-
+String greeting = "Hello!";
+System.out.println(greeting);
     }
 
 
@@ -152,7 +156,11 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void askAndDisplayNameInConsole() {
-
+String sometextString;
+System.out.println("What is your name?");
+String sometext = readLine();
+System.out.println("Your name is: ");
+System.out.println(sometext);
     }
 
     /**
@@ -198,7 +206,10 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void askAndDisplayNameOnASingleLineInConsole() {
-
+        String sometextString;
+        System.out.println("What is your name?");
+        String sometext = readLine();
+        System.out.println("Your name is: " + sometext);
     }
 
     /**
@@ -226,7 +237,13 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void askNameAndAgeInConsole() {
-
+        String sometextString;
+        String ageString;
+        System.out.println("What is your name?");
+        String sometext = readLine();
+        System.out.println("What is your age?");
+        String Age = readLine();
+        System.out.println("Your name is " + sometext + " and your age is " + Age+".");
     }
 
     
@@ -264,6 +281,15 @@ public class AboutConsoleAndVariables {
      * 
      */
     public static void computeAgeIn5YearsConsole() {
+        String Agee;
+        int Age1;
+        System.out.println("What is your age?");
+        Agee = readLine();
+        Age1 = Integer.parseInt(Agee);
+        Age1 = Age1 + 5;
+        System.out.println(" In 5 years from now, you will be " + Age1+".");
+        
+
 
     }
 }
